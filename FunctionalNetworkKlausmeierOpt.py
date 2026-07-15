@@ -3,7 +3,7 @@ from numba import njit
 import h5py
 import time
 
-# PDE SOLVER
+# PDE
 @njit
 def klausmeier(W, N, a_current, dt, dw, dn, m, dx):
 
