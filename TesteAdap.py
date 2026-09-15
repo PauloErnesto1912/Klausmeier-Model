@@ -203,7 +203,7 @@ dt = 0.001
 dw = 1.0
 dn = 0.001
 m = 0.08
-sigma = 0.0
+sigma = 0.05
 
 # DYNAMIC BURN-IN PARAMETERS
 max_burn_steps = 500000
@@ -244,7 +244,7 @@ save_field_values = np.array([
 
 # RUN + SAVE
 with h5py.File(
-    "functional_networks_continuous_dynamic_wn1.h5",
+    "functional_networks_continuous_dynamic.h5",
     "w"
 ) as f:
     (corr_matrices,biomass_values,max_biomass_values,saved_fields) = run_continuous_simulation(a_values,save_field_values)
